@@ -418,21 +418,21 @@ while (ppp<=1)
 end
   
 %% Plot all particle trajectories
-% ccx = [0 0 255]/256.*ones(Nt,1);     % blue
-% ccy = [255 219 88]/256.*ones(Nt,1);  % mustard yellow
-% time = linspace(0,Tend,Nt);
-% figure(10);
-% for j=1:2:max(max([NNx,NNy]))
-%     hold on;
-%     %plot(linspace(0,Tend,Nt),pos(j,:));
-%     scatter(linspace(0,Tend,Nt),posx(j,:),1,ccx);
-%     scatter(linspace(0,Tend,Nt),posy(j,:),1,ccy);
-%     box on;
-%     set(gca,'Color','k','fontsize',20,'fontname','times');
-%     pbaspect([3 1 1]);
-%     set(gcf,'color','w');
-%     %xlabel('Time');
-%     %ylabel('Location on cell membrane');
-%     %yticks([0 0.5 1 1.5 2]);
-%     %yticklabels({'0','0.25','0.5','0.75','1'});
-% end
+ccx = [0 0 255]/256.*ones(Nt,1);     % blue
+ccy = [255 219 88]/256.*ones(Nt,1);  % mustard yellow
+time = linspace(0,Tend,Nt);
+figure(10);
+for j=1:2:max(max([NNx,NNy]))
+    hold on;
+    %plot(linspace(0,Tend,Nt),pos(j,:));
+    scatter(linspace(0,Tend,Nt),posx(j,:),1,ccx);
+    scatter(linspace(0,Tend,Nt),posy(j,:),1,ccy);
+    box on;
+    set(gca,'Color','k','fontsize',20,'fontname','times');
+    pbaspect([3 1 1]);
+    set(gcf,'color','w');
+    %xlabel('Time');
+    %ylabel('Location on cell membrane');
+    %yticks([0 0.5 1 1.5 2]);
+    %yticklabels({'0','0.25','0.5','0.75','1'});
+end
