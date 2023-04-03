@@ -1,7 +1,7 @@
-This repository is an implementation of an algorithm for cell polarity based on the manuscript:
-https://www.biorxiv.org/content/10.1101/785709v1.abstract
+This repository is an implementation of an algorithm for cell polarity based on the article:
+https://www.molbiolcell.org/doi/full/10.1091/mbc.E19-09-0549
 
-The code is written and maintained by Calina Copos (copos@cims.nyu.edu).
+The code is written and maintained by Calina Copos (c.copos@northeastern.edu).
 
 To run the code, open MATLAB and enter the command:
 >> HybridPoly
